@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baskin Robbins</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --br-pink: #e61a8d;
+            --br-brown: #4a2c2a;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        .navbar {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .navbar-brand img {
+            height: 40px;
+        }
+        
+        .btn-br-pink {
+            background-color: var(--br-pink);
+            color: white;
+            border-radius: 25px;
+            padding: 8px 20px;
+            font-weight: bold;
+        }
+        
+        .btn-br-pink:hover {
+            background-color: #d0147a;
+            color: white;
+        }
+        
+        .hamburger-icon {
+            color: var(--br-pink);
+            font-size: 1.5rem;
+        }
+        
+        .hero-section {
+            background-color: #fafafa;
+            padding: 60px 0;
+        }
+        
+        h1.display-4 {
+            color: var(--br-brown);
+        }
+        
+        h1 .pink-text {
+            color: var(--br-pink);
+        }
+        
+        .product-card {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+        
+        .product-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--br-brown);
+            margin-bottom: 5px;
+        }
+        
+        .product-subtitle {
+            color: #666;
+            margin-bottom: 15px;
+        }
+        
+        .croissant-banner {
+            background-color: #f8f4e9;
+            padding: 40px 0;
+            margin-top: 40px;
+        }
+        
+        .order-steps {
+            padding: 60px 0;
+            background-color: #fafafa;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .step-card {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .step-icon {
+            font-size: 2.5rem;
+            color: #aaa;
+            margin-bottom: 15px;
+        }
+        
+        .step-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #555;
+        }
+        
+        .step-description {
+            color: #777;
+            font-size: 0.9rem;
+        }
+        
+        .location-form {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+        
+        .search-input {
+            border-radius: 25px;
+            padding: 10px 20px;
+            border: 1px solid #ddd;
+        }
+        
+        .br-logo {
+            width: 120px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="hamburger-icon"><i class="fas fa-bars"></i></span>
+            </button>
+            <a class="navbar-brand mx-auto mx-lg-0" href="#">
+                <img src="name.jpg" alt="Baskin Robbins Logo" class="br-logo">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="btn btn-br-pink" href="#">ORDER NOW</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="py-5">
+        <div class="container">
+            <h1 class="text-center mb-5"><span class="pink-text">What's</span> New?</h1>
+            
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="product-card">
+                        <img src="left_part.jpg" alt="Croissant Cone Sundae">
+                        <div class="product-title">Croissant Cone</div>
+                        <div class="product-subtitle">Sundae</div>
+                        <a href="#" class="btn btn-br-pink">ORDER NOW</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="product-card">
+                        <img src="middle_part.jpg" alt="Iranian Pista Kulfi">
+                        <div class="product-title">Iranian Pista Kulfi</div>
+                        <div class="product-subtitle">Sundae</div>
+                        <a href="#" class="btn btn-br-pink">ORDER NOW</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="product-card">
+                        <img src="right_part.jpg" alt="Rabdi Jalebi">
+                        <div class="product-title">Rabdi Jalebi</div>
+                        <div class="product-subtitle">Ice cream</div>
+                        <a href="#" class="btn btn-br-pink">ORDER NOW</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="croissant-banner">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <img src="cone.jpg" alt="Croissant Cone Sundaes Varieties" class="img-fluid">
+                </div>
+                <div class="col-lg-5">
+                    <h2 class="mb-2">— 1st time in India —</h2>
+                    <h1 class="display-4 mb-3">Croissant<br>Cone</h1>
+                    <h3>Sundaes</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5">
+        <div class="container text-center location-form">
+            <h5 class="mb-2">Let's get ordering</h5>
+            <h2 class="mb-5">Set your delivery location to<br>get started.</h2>
+            
+            <div class="d-flex flex-column flex-md-row gap-3 justify-content-center">
+                <button class="btn btn-br-pink">
+                    <i class="fas fa-location-dot me-2"></i> Use my current location
+                </button>
+                <span class="align-self-center">OR</span>
+                <div class="flex-grow-1">
+                    <input type="text" class="form-control search-input" placeholder="Search street, locality...">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="order-steps">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="step-card">
+                        <div class="step-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="step-title">Set your location</div>
+                        <div class="step-description">Tell us where you want to get your items delivered</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="step-card">
+                        <div class="step-icon">
+                            <i class="fas fa-ice-cream"></i>
+                        </div>
+                        <div class="step-title">Choose your items</div>
+                        <div class="step-description">Add the items you want in your cart</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="step-card">
+                        <div class="step-icon">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <div class="step-title">Have it delivered instantly</div>
+                        <div class="step-description">Our delivery partners will deliver your order at your doorstep</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
